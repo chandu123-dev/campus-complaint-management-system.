@@ -1,0 +1,19 @@
+{
+  "name": "campus-complaint-server",
+  "version": "1.0.0",
+  "description": "Backend API for Campus Complaint Management System",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "seed": "node scripts/seed.js",
+    "test": "node test/api.test.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "dotenv": "^17.2.3",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2"
+  }
+}

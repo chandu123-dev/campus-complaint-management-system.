@@ -1,0 +1,392 @@
+{
+  "users": [
+    {
+      "_id": "usr_admin_01",
+      "name": "Dr. Marcus Vance",
+      "studentId": "ADM-1001",
+      "email": "admin@campus.edu",
+      "passwordHash": "$2b$10$93nfy0Wdeyz5w4CsvGkOv.8ZOjL1xWbPrfPNYMyXVeKoNClFYGfoq",
+      "department": "Dean of Student Affairs / Administration",
+      "year": "Faculty & Admin",
+      "role": "admin",
+      "avatarUrl": "/src/assets/images/avatar_admin_default_1791611367003.jpg",
+      "createdAt": "2026-08-01T08:00:00.000Z"
+    },
+    {
+      "_id": "usr_stu_01",
+      "name": "Aanya Sharma",
+      "studentId": "STU2024042",
+      "email": "aanya.sharma@campus.edu",
+      "passwordHash": "$2b$10$Wy2n.kkE62HrfB3PqkYwZuaTXo.pkBRv3YFFtOvKgCsakL5UuAqGu",
+      "department": "Computer Science & Engineering",
+      "year": "3rd Year",
+      "role": "student",
+      "avatarUrl": "/src/assets/images/avatar_student_default_1791611356199.jpg",
+      "createdAt": "2026-08-15T09:30:00.000Z"
+    },
+    {
+      "_id": "usr_stu_02",
+      "name": "Rohan Patel",
+      "studentId": "STU2024108",
+      "email": "rohan.patel@campus.edu",
+      "passwordHash": "$2b$10$Wy2n.kkE62HrfB3PqkYwZuaTXo.pkBRv3YFFtOvKgCsakL5UuAqGu",
+      "department": "Mechanical Engineering",
+      "year": "2nd Year",
+      "role": "student",
+      "avatarUrl": "/src/assets/images/avatar_student_default_1791611356199.jpg",
+      "createdAt": "2026-09-01T10:15:00.000Z"
+    }
+  ],
+  "categories": [
+    {
+      "_id": "cat_01",
+      "name": "Infrastructure",
+      "description": "Classrooms, broken desks, doors, windows, and structural issues",
+      "isActive": true
+    },
+    {
+      "_id": "cat_02",
+      "name": "Electrical",
+      "description": "Lighting, fans, air conditioning, power sockets, and wiring",
+      "isActive": true
+    },
+    {
+      "_id": "cat_03",
+      "name": "Water Supply",
+      "description": "Drinking water coolers, washroom faucets, and RO filtration",
+      "isActive": true
+    },
+    {
+      "_id": "cat_04",
+      "name": "Cleanliness",
+      "description": "Restroom sanitation, waste disposal, corridors, and campus hygiene",
+      "isActive": true
+    },
+    {
+      "_id": "cat_05",
+      "name": "Hostel",
+      "description": "Hostel room repairs, mess food, laundry, and dormitory facilities",
+      "isActive": true
+    },
+    {
+      "_id": "cat_06",
+      "name": "Library",
+      "description": "Study cubicles, digital catalog access, AC noise, and book availability",
+      "isActive": true
+    },
+    {
+      "_id": "cat_07",
+      "name": "Laboratory",
+      "description": "Lab apparatus, computers, chemical safety equipment, and software licenses",
+      "isActive": true
+    },
+    {
+      "_id": "cat_08",
+      "name": "Internet and Wi-Fi",
+      "description": "Campus Wi-Fi connectivity, speed bottlenecks, and login gateway",
+      "isActive": true
+    },
+    {
+      "_id": "cat_09",
+      "name": "Transportation",
+      "description": "College shuttle buses, route timings, parking, and driver conduct",
+      "isActive": true
+    },
+    {
+      "_id": "cat_10",
+      "name": "Other",
+      "description": "General grievances and administrative services",
+      "isActive": true
+    }
+  ],
+  "locations": [
+    {
+      "_id": "loc_01",
+      "name": "Main Academic Block A",
+      "description": "Lecture Halls 101-405, Dean Offices",
+      "isActive": true
+    },
+    {
+      "_id": "loc_02",
+      "name": "Science & Engineering Complex",
+      "description": "Labs, Mechanical workshops, CS Labs",
+      "isActive": true
+    },
+    {
+      "_id": "loc_03",
+      "name": "The Nexus Central Library",
+      "description": "Ground floor reading hall, 2nd floor silent cubicles",
+      "isActive": true
+    },
+    {
+      "_id": "loc_04",
+      "name": "Boys Hostel Block 3",
+      "description": "Rooms 301-340, North wing",
+      "isActive": true
+    },
+    {
+      "_id": "loc_05",
+      "name": "Girls Hostel Block 2",
+      "description": "Rooms 201-250, South courtyard",
+      "isActive": true
+    },
+    {
+      "_id": "loc_06",
+      "name": "Student Dining Hall & Canteen",
+      "description": "Central Mess & Cafeteria zone",
+      "isActive": true
+    },
+    {
+      "_id": "loc_07",
+      "name": "Sports Arena & Gymnasium",
+      "description": "Indoor courts, outdoor stadium",
+      "isActive": true
+    },
+    {
+      "_id": "loc_08",
+      "name": "East Campus Parking & Bus Bay",
+      "description": "Shuttle stop and bicycle stands",
+      "isActive": true
+    }
+  ],
+  "complaints": [
+    {
+      "_id": "cmp_01",
+      "complaintId": "CMP-2026-1001",
+      "title": "Broken ceiling projector and flickering lighting in Hall 204",
+      "description": "The overhead digital projector in Academic Block A (Lecture Hall 204) disconnects every 10 minutes during morning lectures. In addition, the fluorescent light panel directly above the podium flickers loudly, disrupting classes.",
+      "category": "Electrical",
+      "location": "Main Academic Block A",
+      "priority": "High",
+      "status": "In Progress",
+      "student": "usr_stu_01",
+      "assignedDepartment": "Campus Electrical Works",
+      "attachmentUrl": "/src/assets/images/campus_facility_cleanliness_1791611379611.jpg",
+      "adminComments": "Electrician team dispatched. Replacement ballast ordered and new HDMI extender installed.",
+      "resolutionNotes": "",
+      "statusHistory": [
+        {
+          "previousStatus": "None",
+          "newStatus": "Submitted",
+          "timestamp": "2026-10-02T09:15:00.000Z",
+          "updatedBy": "Aanya Sharma",
+          "remarks": "Complaint lodged by student"
+        },
+        {
+          "previousStatus": "Submitted",
+          "newStatus": "Acknowledged",
+          "timestamp": "2026-10-02T11:30:00.000Z",
+          "updatedBy": "Dr. Marcus Vance",
+          "remarks": "Assigned to Electrical maintenance supervisor"
+        },
+        {
+          "previousStatus": "Acknowledged",
+          "newStatus": "In Progress",
+          "timestamp": "2026-10-03T14:00:00.000Z",
+          "updatedBy": "Dr. Marcus Vance",
+          "remarks": "Work order #EW-409 generated, parts under replacement"
+        }
+      ],
+      "createdAt": "2026-10-02T09:15:00.000Z",
+      "updatedAt": "2026-10-03T14:00:00.000Z"
+    },
+    {
+      "_id": "cmp_02",
+      "complaintId": "CMP-2026-1002",
+      "title": "Water cooler leaking and filter replacement overdue",
+      "description": "The drinking water cooler on the 2nd floor of Nexus Library is leaking water onto the tile walkway, posing a slipping hazard. The filter indicator also shows red.",
+      "category": "Water Supply",
+      "location": "The Nexus Central Library",
+      "priority": "Urgent",
+      "status": "Resolved",
+      "student": "usr_stu_01",
+      "assignedDepartment": "Facilities & Sanitation",
+      "attachmentUrl": "",
+      "adminComments": "Plumbing contractor serviced the unit and installed dual-stage filter.",
+      "resolutionNotes": "Drain pipe leak fixed, RO membrane replaced, leak sensor tested and certified clean on Oct 4.",
+      "statusHistory": [
+        {
+          "previousStatus": "None",
+          "newStatus": "Submitted",
+          "timestamp": "2026-10-03T08:20:00.000Z",
+          "updatedBy": "Aanya Sharma",
+          "remarks": "Water leakage reported"
+        },
+        {
+          "previousStatus": "Submitted",
+          "newStatus": "In Progress",
+          "timestamp": "2026-10-03T10:00:00.000Z",
+          "updatedBy": "Dr. Marcus Vance",
+          "remarks": "Priority plumbing dispatched"
+        },
+        {
+          "previousStatus": "In Progress",
+          "newStatus": "Resolved",
+          "timestamp": "2026-10-04T16:45:00.000Z",
+          "updatedBy": "Dr. Marcus Vance",
+          "remarks": "Filters replaced and water test report verified"
+        }
+      ],
+      "createdAt": "2026-10-03T08:20:00.000Z",
+      "updatedAt": "2026-10-04T16:45:00.000Z"
+    },
+    {
+      "_id": "cmp_03",
+      "complaintId": "CMP-2026-1003",
+      "title": "Wi-Fi gateway dropouts in CS Computer Lab 3",
+      "description": "High packet loss and intermittent DNS failure when connecting more than 20 workstations to the lab access point. Causes compiler timeouts during practical exams.",
+      "category": "Internet and Wi-Fi",
+      "location": "Science & Engineering Complex",
+      "priority": "Urgent",
+      "status": "Submitted",
+      "student": "usr_stu_01",
+      "assignedDepartment": "IT Network Operations",
+      "attachmentUrl": "",
+      "adminComments": "",
+      "resolutionNotes": "",
+      "statusHistory": [
+        {
+          "previousStatus": "None",
+          "newStatus": "Submitted",
+          "timestamp": "2026-10-08T11:40:00.000Z",
+          "updatedBy": "Aanya Sharma",
+          "remarks": "Complaint registered"
+        }
+      ],
+      "createdAt": "2026-10-08T11:40:00.000Z",
+      "updatedAt": "2026-10-08T11:40:00.000Z"
+    },
+    {
+      "_id": "cmp_04",
+      "complaintId": "CMP-2026-1004",
+      "title": "Broken window latch in Hostel Block 3 Room 314",
+      "description": "The south-facing window latch is snapped and rattles violently in high wind. Water enters during heavy rain.",
+      "category": "Hostel",
+      "location": "Boys Hostel Block 3",
+      "priority": "Medium",
+      "status": "Acknowledged",
+      "student": "usr_stu_02",
+      "assignedDepartment": "Hostel Wardens & Maintenance",
+      "attachmentUrl": "",
+      "adminComments": "Hostel warden notified; carpenter will inspect on Friday morning.",
+      "resolutionNotes": "",
+      "statusHistory": [
+        {
+          "previousStatus": "None",
+          "newStatus": "Submitted",
+          "timestamp": "2026-10-05T14:10:00.000Z",
+          "updatedBy": "Rohan Patel",
+          "remarks": "Initial report"
+        },
+        {
+          "previousStatus": "Submitted",
+          "newStatus": "Acknowledged",
+          "timestamp": "2026-10-06T09:00:00.000Z",
+          "updatedBy": "Dr. Marcus Vance",
+          "remarks": "Inspected by caretaker"
+        }
+      ],
+      "createdAt": "2026-10-05T14:10:00.000Z",
+      "updatedAt": "2026-10-06T09:00:00.000Z"
+    },
+    {
+      "_id": "cmp_05",
+      "complaintId": "CMP-2026-1005",
+      "title": "Inadequate trash receptacles outside Student Dining Hall",
+      "description": "During lunch hours (12 PM to 2 PM), waste containers overflow rapidly, leading to litter on the lawn.",
+      "category": "Cleanliness",
+      "location": "Student Dining Hall & Canteen",
+      "priority": "Low",
+      "status": "Rejected",
+      "student": "usr_stu_02",
+      "assignedDepartment": "Facilities & Sanitation",
+      "attachmentUrl": "",
+      "adminComments": "New 120-liter segregated waste bins were already installed yesterday as part of the green campus initiative.",
+      "resolutionNotes": "Duplicate issue addressed by campus-wide rollout of color-coded receptacles.",
+      "statusHistory": [
+        {
+          "previousStatus": "None",
+          "newStatus": "Submitted",
+          "timestamp": "2026-10-04T12:30:00.000Z",
+          "updatedBy": "Rohan Patel",
+          "remarks": "Submitted"
+        },
+        {
+          "previousStatus": "Submitted",
+          "newStatus": "Rejected",
+          "timestamp": "2026-10-05T11:00:00.000Z",
+          "updatedBy": "Dr. Marcus Vance",
+          "remarks": "Already implemented under university green campus phase 2"
+        }
+      ],
+      "createdAt": "2026-10-04T12:30:00.000Z",
+      "updatedAt": "2026-10-05T11:00:00.000Z"
+    },
+    {
+      "_id": "cmp_1791612957383_74jszk7",
+      "complaintId": "CMP-2026-1006",
+      "assignedDepartment": "General Administration",
+      "adminComments": "",
+      "resolutionNotes": "",
+      "status": "Acknowledged",
+      "statusHistory": [
+        {
+          "previousStatus": "None",
+          "newStatus": "Submitted",
+          "timestamp": "2026-10-10T06:15:57.383Z",
+          "updatedBy": "Aanya Sharma",
+          "remarks": "Complaint registered successfully"
+        },
+        {
+          "previousStatus": "Submitted",
+          "newStatus": "Acknowledged",
+          "timestamp": "2026-10-10T06:15:57.394Z",
+          "updatedBy": "Dr. Marcus Vance",
+          "remarks": "Test suite supervisor review"
+        }
+      ],
+      "createdAt": "2026-10-10T06:15:57.383Z",
+      "updatedAt": "2026-10-10T06:15:57.394Z",
+      "title": "Automated Test: Flickering LED strip in CS Reading Hall",
+      "description": "Test description generated by automated test suite.",
+      "category": "Electrical",
+      "location": "The Nexus Central Library",
+      "priority": "High",
+      "attachmentUrl": "",
+      "student": "usr_stu_01"
+    },
+    {
+      "_id": "cmp_1791613179307_rnwvhk6",
+      "complaintId": "CMP-2026-1007",
+      "assignedDepartment": "General Administration",
+      "adminComments": "",
+      "resolutionNotes": "",
+      "status": "Acknowledged",
+      "statusHistory": [
+        {
+          "previousStatus": "None",
+          "newStatus": "Submitted",
+          "timestamp": "2026-10-10T06:19:39.307Z",
+          "updatedBy": "Aanya Sharma",
+          "remarks": "Complaint registered successfully"
+        },
+        {
+          "previousStatus": "Submitted",
+          "newStatus": "Acknowledged",
+          "timestamp": "2026-10-10T06:19:39.312Z",
+          "updatedBy": "Dr. Marcus Vance",
+          "remarks": "Test suite supervisor review"
+        }
+      ],
+      "createdAt": "2026-10-10T06:19:39.307Z",
+      "updatedAt": "2026-10-10T06:19:39.312Z",
+      "title": "Automated Test: Flickering LED strip in CS Reading Hall",
+      "description": "Test description generated by automated test suite.",
+      "category": "Electrical",
+      "location": "The Nexus Central Library",
+      "priority": "High",
+      "attachmentUrl": "",
+      "student": "usr_stu_01"
+    }
+  ]
+}
